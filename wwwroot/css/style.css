@@ -3,3 +3,18 @@
 .test {
     background-color:#FFFF00;
 }
+
+.colLine {
+    line-height: 200%;
+    min-height: 30px;
+    border-bottom: 1px dotted #CCCCCC;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.ellipsis {
+    white-space: nowrap;
+    over-flow: hidden;
+    text-over-flow: ellipsis;
+    max-width: 0;
+}

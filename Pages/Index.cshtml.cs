@@ -6,6 +6,10 @@ namespace Web1.Pages
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;
+       
+        public string Name { get; set; }
+        public string Company {  get; set; }
+
 
         public IndexModel(ILogger<IndexModel> logger)
         {
@@ -14,7 +18,8 @@ namespace Web1.Pages
 
         public void OnGet()
         {
-
+            Name = "Hong Kil Dong";
+            Company = "UIPA ORG";
         }
     }
 }

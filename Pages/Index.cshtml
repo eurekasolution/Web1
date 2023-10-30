@@ -3,8 +3,12 @@
 @{
     ViewData["Title"] = "UIPA ASP.NET";
 }
+@{
+    Layout = "_Layout";
+}
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p class="test">Hello ASP.NET World @DateTime.Now </p>
+    <p>Name = @Model.Name , Company = @Model.Company</p>
 </div>
