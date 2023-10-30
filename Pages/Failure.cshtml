@@ -1,0 +1,17 @@
+﻿@page
+@model Web1.Pages.FailureModel
+@{
+    string Message = TempData["ErrorMessage"] as string;
+    string NextUrl = TempData["NextPage"] as string;
+}
+
+<script>
+    if(confirm('실패입니다. @Html.Raw(Message)'))
+    {
+        location.href = '@Html.Raw(NextUrl)';
+    }else
+    {
+        location.href = '@Html.Raw(NextUrl)';
+    }
+
+</script>

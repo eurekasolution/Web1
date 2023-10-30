@@ -4,6 +4,21 @@
     background-color:#FFFF00;
 }
 
+a:link {
+    text-decoration: none;
+    color:#333333;
+}
+
+a:over {
+    text-decoration: underline;
+    color: #0000FF;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #333333;
+}
+
 .colLine {
     line-height: 200%;
     min-height: 30px;

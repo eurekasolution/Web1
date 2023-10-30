@@ -1,0 +1,56 @@
+﻿@page
+@model Web1.Pages.LoginModel
+@{
+
+}
+<form method="post">
+<div class="container">
+    <div class="row">
+        <div class="col-3">
+
+        </div>
+
+        <div class="col">
+            <div class="row">
+                <div class="colLine"><br /><br /><br /><br />
+                    <h4 class="text-primary">
+                        <span class="material-icons">key</span>   
+                        로그인
+                    </h4>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4 colLine">
+                    ID
+                </div>
+                <div class="col colLine">
+                    <input type="text" name="id" required placeholder="ID 입력" class="form-control"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4 colLine">
+                    PW
+                </div>
+                <div class="col colLine">
+                    <input type="password" name="pass" required placeholder="비번 입력" class="form-control" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 colLine">
+                    <button type="submit" class="btn btn-sm btn-primary form-control">로그인</button>
+                </div>
+                <div class="col colLine">
+                    <button type="button" class="btn btn-sm btn-primary form-control" onclick="alert('가입하기로 이동 예정')">가입</button>
+                </div>
+                <div class="col colLine">
+                    <button type="button" class="btn btn-sm btn-primary form-control" onclick="confirm('아이디/비번찾기 이동 예정')">찾기</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-3">
+        </div>
+    </div>
+</div>
+</form>
