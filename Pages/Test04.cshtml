@@ -1,0 +1,22 @@
+﻿@page
+@model Web1.Pages.Test04Model
+@{
+}
+<div class="container">
+    <div class="row">
+        <div class="col colLine">
+            <h3 class="text-primary">ASP.NET Razor : array + for</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2 colLine">
+            foreach
+        </div>
+        <div class="col colLine">
+            @foreach(var item in Model.MyArray)
+            {
+                <li>@item</li>
+            }
+        </div>
+    </div>
+</div>

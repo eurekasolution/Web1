@@ -1,0 +1,60 @@
+﻿@page
+@model Web1.Pages.Test03Model
+@{
+    string greeting = "Hello UIPA";
+    int count = 123;
+    DateTime now = DateTime.Today;
+
+}
+<div class="container">
+    <div class="row">
+        <div class="col colLine">
+            <h3 class="text-primary">ASP.NET Razor : for</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2 colLine">
+            Data Type
+        </div>
+        <div class="col colLine">
+            @greeting , @count, @now
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2 colLine">
+            var + for
+        </div>
+        <div class="col colLine">
+            @for(var line = 1; line<=5; line ++)
+            {
+                <p>Line : @line</p>
+            }
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-2 colLine">
+            반복문
+        </div>
+        <div class="col colLine">
+            <ul>
+                @for(int i=1; i<=10; i++)
+                {
+                    <li>@i</li>
+                }
+            </ul>
+
+            <ol>
+                @for (int i = 1; i <= 10; i++)
+                {
+                    <li>@i</li>
+                }
+            </ol>
+
+            @for (int i = 1; i <= 10; i++)
+            {
+                <li>@i</li>
+            }
+        </div>
+    </div>
+</div>

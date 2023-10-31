@@ -1,0 +1,22 @@
+﻿@page
+@model Web1.Pages.Test05Model
+@{
+}
+<div class="container">
+    <div class="row">
+        <div class="col colLine">
+            <h3 class="text-primary">ASP.NET Razor : cs파일에서 foreach</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2 colLine">
+            Server Info
+        </div>
+        <div class="col colLine">
+            @foreach(var item in Model.ServerVariableItems)
+            {
+                <li>@item</li>
+            }
+        </div>
+    </div>
+</div>

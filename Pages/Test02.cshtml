@@ -1,0 +1,38 @@
+﻿@page
+@model Web1.Pages.Test02Model
+@{
+    int age = 34;
+    string name = "홍길동";
+    var message = "안녕하세요";
+}
+<div class="container">
+    <div class="row">
+        <div class="col colLine">
+            <h3 class="text-primary">ASP.NET Razor : Block, Expression</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2 colLine">
+            변수
+        </div>
+        <div class="col colLine">
+            이름 : @name <br />
+            나이 : @age <br />
+            메시지 : @message;
+        </div>
+    </div>
+
+    @{
+        var greeting = "Hello World";
+        var now = DateTime.Now;
+        var greetingMessage = greeting + ", today = " + now;
+    }
+    <div class="row">
+        <div class="col-2 colLine">
+            블럭
+        </div>
+        <div class="col colLine">
+            @greetingMessage
+        </div>
+    </div>
+</div>
