@@ -6,16 +6,13 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Web1.Migrations
 {
     /// <inheritdoc />
-    public partial class m1 : Migration
+    public partial class aaa : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AlterDatabase()
-                .Annotation("MySql:CharSet", "utf8mb4");
-
             migrationBuilder.CreateTable(
-                name: "User",
+                name: "Person",
                 columns: table => new
                 {
                     Idx = table.Column<int>(type: "int", nullable: false)
@@ -29,7 +26,7 @@ namespace Web1.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_User", x => x.Idx);
+                    table.PrimaryKey("PK_Person", x => x.Idx);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
         }
@@ -38,7 +35,7 @@ namespace Web1.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "User");
+                name: "Person");
         }
     }
 }

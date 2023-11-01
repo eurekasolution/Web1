@@ -39,6 +39,7 @@ namespace Web1.Models
         */
         // DbSet에 모델 클래스 추가
         public DbSet<User> User { get; set; }
+        public DbSet<Person> Person { get; set; }   
 
     }
 }

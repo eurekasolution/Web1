@@ -1,3 +1,83 @@
+9. 
+
+	JS :
+
+	function sayHello()
+	{
+	
+	}
+
+	function test(value)
+	{
+	
+	}
+
+	sayHello = () => { };
+
+	int value = (x) => { x * x };
+	int value = (x) => x * x;
+
+	int value = (x, y) => { x + y };
+	int value = (x, y) => x + y;
+
+	int value = (x, y) => {
+		let sum = x + y;
+		return sum;
+	};
+
+	int value = add(x , y);
+	function add(a, b)
+	{
+		return a + b;
+	}
+
+	function noName(x)
+	{
+		return x * x;
+	}
+
+	int value = noName(x);
+
+
+	test((x, y) => x + y);
+
+
+8. 2월
+
+	year
+	29 : 4의 배수이면서, 100으로는 안떨어지고 400으로 나누어떨어지면 29이다.
+
+
+	if(year % 4 == 0)
+	{
+		// 기본 : 29
+
+		if(year % 100==0)
+		{ 
+			// 28 ( 1900 )
+			if(year % 400 ==0)
+				// 29
+			else
+				// 28
+		}else
+		{
+			29
+		}
+	}else
+	{
+		28
+	}
+
+7. Migrations
+
+	dotnet ef migrations add init
+	dotnet ef database update
+6. 통신기술
+
+	TDMA
+	FDMA
+	CDMA
+
 
 5. File Upload
 

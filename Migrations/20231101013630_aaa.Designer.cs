@@ -10,8 +10,8 @@ using Web1.Models;
 namespace Web1.Migrations
 {
     [DbContext(typeof(Web1DbContext))]
-    [Migration("20231031112232_m1")]
-    partial class m1
+    [Migration("20231101013630_aaa")]
+    partial class aaa
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -20,6 +20,31 @@ namespace Web1.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "7.0.13")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
+
+            modelBuilder.Entity("Web1.Models.Person", b =>
+                {
+                    b.Property<int>("Idx")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("Id")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("varchar(20)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("varchar(20)");
+
+                    b.Property<string>("Pass")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Idx");
+
+                    b.ToTable("Person");
+                });
 
             modelBuilder.Entity("Web1.Models.User", b =>
                 {
